@@ -1,0 +1,26 @@
+body {
+  background-color: #f8d196;
+  color: black;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  &__button{
+    align-self: center;
+    outline: none;
+    width: 25%;
+    height: 20rem;
+    border-radius: 50%;
+    background-color: #28cb42;
+    
+    @media only screen and (max-width: 600px) {
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+}
