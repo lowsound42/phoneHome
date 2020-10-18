@@ -35,8 +35,14 @@ body {
     align-self: center;
     width: 24%;
     height: 50%; }
+    .container__button:hover {
+      -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+      -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+      box-shadow: 10px 20px 1px rgba(0, 0, 0, 0.3);
+      transition: all 0.4s ease 0s; }
     .container__button:focus {
-      outline: 0; }
+      outline: 0;
+      box-shadow: 15px 20px 1px rgba(23, 234, 23, 0.3); }
     .container__button:nth-child(1) {
       background-image: url("../images/talk.jpg");
       background-repeat: no-repeat;

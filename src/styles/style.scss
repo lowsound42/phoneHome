@@ -43,8 +43,16 @@ body {
     width: 24%;
     height: 50%;
 
+    &:hover{
+      -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+      -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+      box-shadow: 10px 20px 1px rgba(0,0,0,0.3);
+      transition: all 0.4s ease 0s;    
+    }
+
     &:focus{
       outline: 0;
+      box-shadow: 15px 20px 1px rgba(23,234,23,0.3);
     }
 
     &:nth-child(1){
