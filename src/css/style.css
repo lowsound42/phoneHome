@@ -24,16 +24,18 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 65vh; }
   @media only screen and (max-width: 600px) {
     .container {
       flex-direction: column;
-      justify-content: space-between;
       margin-top: 0; } }
   .container__button {
     align-self: center;
     width: 24%;
-    height: 10rem; }
+    height: 50%; }
+    .container__button:focus {
+      outline: 0; }
     .container__button:nth-child(1) {
       background-image: url("../images/talk.jpg");
       background-repeat: no-repeat;
@@ -56,4 +58,9 @@ body {
     @media only screen and (max-width: 600px) {
       .container__button {
         width: 90%;
+        margin-bottom: 1rem; } }
+    @media only screen and (min-width: 601px) and (max-width: 800px) {
+      .container__button {
+        width: 30%;
+        height: 30%;
         margin-bottom: 1rem; } }
