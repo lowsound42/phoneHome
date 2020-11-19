@@ -3,7 +3,7 @@ function talk() {
     text: "green"
   }  
   
-  fetch('https://cors-anywhere.herokuapp.com/http://egg.hopto.org:8042/light', {
+  fetch('http://egg.hopto.org:8042/light', {
   method: 'POST', 
   headers: {
     'Content-Type': 'application/json',
@@ -24,7 +24,7 @@ function khaana() {
     text: "red"
   }  
   
-  fetch('https://cors-anywhere.herokuapp.com/http://egg.hopto.org:8042/light', {
+  fetch('http://egg.hopto.org:8042/light', {
   method: 'POST', 
   headers: {
     'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ function night() {
     text: "blue"
   }  
   
-  fetch('https://cors-anywhere.herokuapp.com/http://egg.hopto.org:8042/light', {
+  fetch('http://egg.hopto.org:8042/light', {
   method: 'POST', 
   headers: {
     'Content-Type': 'application/json',
