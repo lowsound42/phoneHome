@@ -4,7 +4,7 @@ function talk() {
     };
 
     fetch(
-        'https://cors-anywhere.herokuapp.com/http://egg.hopto.org:8042/light',
+        'https://secret-ocean-49799.herokuapp.com/http://egg.hopto.org:8042/light',
         {
             method: 'POST',
             headers: {
