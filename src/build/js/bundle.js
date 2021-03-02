@@ -10,9 +10,7 @@ function talk() {
         },
         body: JSON.stringify(data)
     })
-        .then((res) => res.text()) // convert to plain text
-        .then((text) => console.log(text))
-        .then((response) => response.json())
+        .then((response) => response.text())
         .then((data) => {
             console.log('Success:', data);
         })
