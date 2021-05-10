@@ -3,7 +3,7 @@ function talk() {
         text: 'green'
     };
 
-    fetch('http://egg.hopto.org:8042/light', {
+    fetch('/light', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -24,7 +24,7 @@ function khaana() {
         text: 'red'
     };
 
-    fetch('http://egg.hopto.org:8042/light', {
+    fetch('/light', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -45,7 +45,7 @@ function night() {
         text: 'blue'
     };
 
-    fetch('http://egg.hopto.org:8042/light', {
+    fetch('/light', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
