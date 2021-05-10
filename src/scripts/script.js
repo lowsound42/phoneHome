@@ -1,3 +1,23 @@
+function emailCall(ip, data) {
+    (async () => {
+        const rawResponse = await fetch(
+            'https://homepage-mcquack.herokuapp.com/send',
+            {
+                method: 'POST',
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    ip: ip,
+                    data: data.text
+                })
+            }
+        );
+        const content = await rawResponse.json();
+    })();
+}
+
 function httpGetAsync(url, data) {
     var xmlHttp = new XMLHttpRequest();
     let ipResult;
@@ -5,6 +25,7 @@ function httpGetAsync(url, data) {
         if (xmlHttp.readyState === 4 && xmlHttp.status === 200)
             ipResult = xmlHttp.responseText;
         changeLight(ipResult, data);
+        emailCall(ipResult, data);
     };
     xmlHttp.open('GET', url, true); // true for asynchronous
     xmlHttp.send(null);
@@ -15,7 +36,7 @@ function changeLight(ip, colour) {
         text: colour,
         ip: ip
     };
-    fetch('http://24.212.130.181:8042/light', {
+    fetch('/light', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
