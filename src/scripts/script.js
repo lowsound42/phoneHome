@@ -1,7 +1,7 @@
 function emailCall(ip, data) {
     (async () => {
         const rawResponse = await fetch(
-            'https://homepage-mcquack.herokuapp.com/send',
+            'https://homepage-mcquack.herokuapp.com/light',
             {
                 method: 'POST',
                 headers: {
